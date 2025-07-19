@@ -1,0 +1,9 @@
+# Ignore the virtual environment folder
+venv1/
+
+# Optionally ignore __pycache__ directories
+__pycache__/
+
+#ignore all keras
+.keras/
+**/.keras/

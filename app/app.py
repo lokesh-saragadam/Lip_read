@@ -28,7 +28,7 @@ if options:
 
     with col1:
         st.info('The video below displayes the converted video in mp4 format')
-        file_path = os.path.join('..','data','s1',selected_video)
+        file_path = os.path.join('data','s1',selected_video)
         os.system(f'ffmpeg -i {file_path} -vcodec libx264 test_video.mp4 -y')
         
         #Rendering inside of the app

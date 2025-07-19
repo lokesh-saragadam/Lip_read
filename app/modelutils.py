@@ -28,6 +28,6 @@ def load_model() -> Sequential:
 
     model.add(Dense(41, kernel_initializer='he_normal', activation='softmax'))
 
-    model.load_weights('model_lip_reading.h5')
+    model.load_weights('app/model_lip_reading.h5')
 
     return model

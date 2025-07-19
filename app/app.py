@@ -18,7 +18,7 @@ with st.sidebar:
 
 st.title('LipNet Full Stack App')
 #set the layout to the streamlit...
-options = os.listdir(os.path.join('..','data','s1'))
+options = os.listdir(os.path.join('data','s1'))
 selected_video = st.selectbox('Choose video', options)
 
 #generate two columns

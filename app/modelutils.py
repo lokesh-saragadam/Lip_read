@@ -1,7 +1,7 @@
 import os 
 from tensorflow.keras.models import Sequential 
 from tensorflow.keras.layers import Conv3D, LSTM, Dense, Dropout, Bidirectional, MaxPool3D, Activation, Reshape, SpatialDropout3D, BatchNormalization, TimeDistributed, Flatten
-
+from tensorflow.keras.optimizers import Adam
 def CTCLoss(y_true, y_pred):
     batch_len = tf.cast(tf.shape(y_true)[0], dtype="int64")
     input_length = tf.cast(tf.shape(y_pred)[1], dtype="int64")
